@@ -1,5 +1,5 @@
 import pandas as pd
-
+import matplotlib.pyplot as plt
 
 class DataAnalyze:
     def __init__(self):
@@ -24,6 +24,24 @@ class DataAnalyze:
 
     def get_format(self):
         return self.data
+    
+    def plot_data(self):
+        fig, axs = plt.subplots(2, 3, figsize=(15, 10))
+        print('----\n', self.data)
+        for i, ax in enumerate(axs.flat):
+            col = f'R{i+1}({self.res_name_conf[i]})'
+            ax.plot(self.data['T'], self.data[col], marker='o')
+            ax.set_title(col)
+            ax.set_xlabel('T')
+            ax.set_ylabel('Values')
+        plt.tight_layout()
+        plt.show()
+
+
+# Использование:
+data_analyze = DataAnalyze()
+data_analyze.add_data(322.372, 297.925, 295.925, 311.925, 297.925, 294.925, 345.925)
+data_analyze.plot_data()
     
 
 '''data = DataAnalyze()

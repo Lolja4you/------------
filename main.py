@@ -7,45 +7,53 @@
 #     decoded_response = response.decode('utf-8')
 #     print(decoded_response)
 
-from src.DataAnalyze import DataAnalyze, data_test_gen
+import serial, threading, time, atexit
 
+from src.DataAnalyze import DataAnalyze, data_test_gen
+from src import StartPage
+
+
+data_entrance_formater = DataAnalyze()
+
+def read_usb():
+    t = 10
+    # ser = serial.Serial('COM7', 9600)
+    
+    while True:
+        # Poduction
+        # response = ser.readline()
+        # decoded_response = response.decode('utf-8') 
+        # data_entrance_formater.add_data(*map(int, decoded_response.split()))
+
+        decoded_response = data_test_gen(t)
+        t = decoded_response[0]
+        data_entrance_formater.add_data(*decoded_response)
+        print(data_entrance_formater.get_format())
+        time.sleep(1)
+
+        
+
+def start_usb_thread():
+    usb_thread = threading.Thread(target=read_usb)
+    usb_thread.daemon = True
+    usb_thread.start()
 
 
 def main():
-    data_entrance_formater = DataAnalyze()
-    
-    import time, mplcursors
-    import matplotlib.pyplot as plt
+    start_usb_thread()
+    # start_UI_thread()
 
-    start_time = time.time()
-    t = 10
-    plt.figure(figsize=(10, 6))
-    plt.ion()  # Включаем интерактивный режим
-
-    def on_close(event):
-        plt.close()
-        raise SystemExit
+    window = StartPage(data_entrance_formater)
+    window.mainloop()
 
 
-    while True:
-        data_input = data_test_gen(t)
-        t = data_input[0]
-        data_entrance_formater.add_data(*data_input)
+def print_accumulated_data():
+    data = data_entrance_formater.get_format()
+    print("Accumulated Data:")
+    print(data)
 
-        plt.clf()  # Очищаем предыдущий график
-        for column in data_entrance_formater.get_format().columns[1:]:
-            plt.plot(data_entrance_formater.get_format()['T'], data_entrance_formater.get_format()[column], label=column, marker='o')
 
-        mplcursors.cursor(hover=True).connect("add", lambda sel: sel.annotation.set_text(f"({sel.target[0]}, {sel.target[1]})"))
-
-        plt.grid()
-        plt.xlabel('T')
-        plt.ylabel('Value')
-        plt.legend()
-        plt.title('Data Analysis')
-        plt.draw()
-        plt.pause(1.5)  # Пауза для обновления графика
-        fig = plt.gcf()
-        fig.canvas.mpl_connect('close_event', on_close)
 if __name__ == "__main__":
+    # atexit.register(print_accumulated_data)
     main()
+
