@@ -28,7 +28,6 @@ def read_usb():
         decoded_response = data_test_gen(t)
         t = decoded_response[0]
         data_entrance_formater.add_data(*decoded_response)
-        print(data_entrance_formater.get_format())
         time.sleep(1)
 
         

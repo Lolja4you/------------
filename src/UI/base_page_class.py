@@ -20,8 +20,6 @@ class BaseWindow(tk.Tk):
         self.bind("<F11>", self.toggle_fullscreen)
         self.bind("<Escape>", self.end_fullscreen)
 
-        self.button_font = ('Helvetica', 10)
-
     def toggle_fullscreen(self, event=None):
         self.overrideredirect(not self.overrideredirect())
         return "break"

@@ -9,7 +9,7 @@ class DataAnalyze:
             **{f'R{i+1}({self.res_name_conf[i]})': [None] for i in range(6)}
         })
     
-    def load_res_name_conf(self, arg = True):
+    def load_res_name_conf(self, arg=True):
         if not arg:
             return [None] * 6
         return [i+1 for i in range(6)]
@@ -17,31 +17,35 @@ class DataAnalyze:
     def add_data(self, *args):
         in_df = pd.DataFrame({
             'T': [args[0]],
-            **{f'R{i}({self.res_name_conf[i-1]})': [args[i]] for i in range(1,7)}
+            **{f'R{i}({self.res_name_conf[i-1]})': [args[i]] for i in range(1, 7)}
         })
+
+        # Exclude empty or all-NA columns before concatenating
+        columns_to_include = in_df.columns[~in_df.isnull().all()]
+        in_df = in_df[columns_to_include]
 
         self.data = pd.concat([self.data, in_df], ignore_index=True)
 
     def get_format(self):
         return self.data
     
-    def plot_data(self):
-        fig, axs = plt.subplots(2, 3, figsize=(15, 10))
-        print('----\n', self.data)
-        for i, ax in enumerate(axs.flat):
-            col = f'R{i+1}({self.res_name_conf[i]})'
-            ax.plot(self.data['T'], self.data[col], marker='o')
-            ax.set_title(col)
-            ax.set_xlabel('T')
-            ax.set_ylabel('Values')
-        plt.tight_layout()
-        plt.show()
+#     def plot_data(self):
+#         fig, axs = plt.subplots(2, 3, figsize=(15, 10))
+#         print('----\n', self.data)
+#         for i, ax in enumerate(axs.flat):
+#             col = f'R{i+1}({self.res_name_conf[i]})'
+#             ax.plot(self.data['T'], self.data[col], marker='o')
+#             ax.set_title(col)
+#             ax.set_xlabel('T')
+#             ax.set_ylabel('Values')
+#         plt.tight_layout()
+#         plt.show()
 
 
-# Использование:
-data_analyze = DataAnalyze()
-data_analyze.add_data(322.372, 297.925, 295.925, 311.925, 297.925, 294.925, 345.925)
-data_analyze.plot_data()
+# # Использование:
+# data_analyze = DataAnalyze()
+# data_analyze.add_data(322.372, 297.925, 295.925, 311.925, 297.925, 294.925, 345.925)
+# data_analyze.plot_data()
     
 
 '''data = DataAnalyze()
