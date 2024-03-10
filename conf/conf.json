@@ -1,0 +1,9 @@
+{
+    "usb": "virtual_data",
+    "split": "0",
+    "reset": "1",
+    "defaul_resistors_name": ["None","None","None","None","None","None"],
+    "conf_format": "[%H:%M:%S %Y-%m-%d] ",
+    "font": {"font_family" : "Halvetica", "font_size":10},
+    "mplcursors": "1"
+}

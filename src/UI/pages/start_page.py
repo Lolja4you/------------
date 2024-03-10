@@ -8,6 +8,7 @@ from matplotlib.backends.backend_tkagg import FigureCanvasTkAgg
 import mplcursors
 
 from src.UI.base_page_class import BaseWindow 
+from src.UI.pages import settings_page
 from src.UI.layouts import plot_layout, text_layuot
 
 class StartPage(BaseWindow):
@@ -15,6 +16,7 @@ class StartPage(BaseWindow):
         super().__init__(*args, **kwargs)
 
         self.process_running = False
+        self.settings = False
 
         self.tool_frame = tk.Frame(self, bd=2)
         self.tool_frame.pack(side=tk.RIGHT, fill=tk.Y)
@@ -39,10 +41,10 @@ class StartPage(BaseWindow):
         self.reset_button = tk.Button(self.button_frame, text="Сброс", command=self.reset_action, font=self.button_font)
         self.reset_button.pack(side=tk.LEFT)
 
-        self.graphs_button = tk.Button(self.button_frame, text="Разделенные графики", command=self.open_split_plot, font=self.button_font)
+        self.graphs_button = tk.Button(self.button_frame, text="Сменить вид`    ", command=self.open_split_plot, font=self.button_font)
         self.graphs_button.pack(side=tk.LEFT)
 
-        self.settings_button = tk.Button(self.button_frame, text="Настройки", command=self.reset_action, font=self.button_font)
+        self.settings_button = tk.Button(self.button_frame, text="Настройки", command=self.open_settings_page, font=self.button_font)
         self.settings_button.pack(side=tk.LEFT)
         
         # Лог данных
@@ -67,7 +69,7 @@ class StartPage(BaseWindow):
         self.fn_repeat_id1 = self.after(2000, self.update_plot)
 
     def start_action(self):
-        if not self.process_running:
+        if not self.process_running or not self.settings:
             # Add your start action logic here
             self.log_text.insert(tk.END, self.log_formats + "Start action triggered\n", "green")
             self.update_plot()
@@ -76,7 +78,7 @@ class StartPage(BaseWindow):
             self.log_text.insert(tk.END, self.log_formats + "Достигнут максимальный поток исполнения\n", "red")
 
     def stop_action(self):
-        if self.process_running:
+        if self.process_running or self.settings:
             # Add your stop action logic here
             self.log_text.insert(tk.END, self.log_formats + "Stop action triggered\n", "red")
             self.after_cancel(self.fn_repeat_id1)
@@ -92,6 +94,14 @@ class StartPage(BaseWindow):
         self.canvas.draw()
         
         self.data_storage.data.drop(self.data_storage.data.index, inplace=True)
+
+    def open_settings_page(self):
+        self.settings = True
+        self.stop_action()
+        page = settings_page.SettingsPage(self.data_storage)
+        page.protocol("WM_DELETE_WINDOW", lambda: (page.destroy(), setattr(self, 'settings', False), self.start_action()))
+        page.mainloop()
+
 
     def open_split_plot(self):
         self.plot_drawer.split = not self.plot_drawer.split
