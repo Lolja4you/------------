@@ -1,0 +1,116 @@
+ERROR:root:Error setting serial port: could not open port 'COM1': FileNotFoundError(2, 'Не удается найти указанный файл.', None, 2)
+ERROR:root:An error occurred: 'bool' object has no attribute 'strip'
+ERROR:root:An error occurred: 'bool' object has no attribute 'strip'
+ERROR:root:An error occurred: 'bool' object has no attribute 'strip'
+ERROR:root:An error occurred: 'bool' object has no attribute 'strip'
+ERROR:root:An error occurred: 'bool' object has no attribute 'strip'
+ERROR:root:Error setting serial port: could not open port 'COM1': FileNotFoundError(2, 'Не удается найти указанный файл.', None, 2)
+ERROR:root:Error setting serial port: could not open port 'COM2': FileNotFoundError(2, 'Не удается найти указанный файл.', None, 2)
+ERROR:root:An error occurred: 'bool' object has no attribute 'strip'
+ERROR:root:An error occurred: 'bool' object has no attribute 'strip'
+ERROR:root:An error occurred: 'bool' object has no attribute 'strip'
+ERROR:root:An error occurred: 'bool' object has no attribute 'strip'
+ERROR:root:An error occurred: 'bool' object has no attribute 'strip'
+ERROR:root:Error setting serial port: could not open port 'COM1': FileNotFoundError(2, 'Не удается найти указанный файл.', None, 2)
+ERROR:root:Error setting serial port: could not open port 'COM2': FileNotFoundError(2, 'Не удается найти указанный файл.', None, 2)
+ERROR:root:An error occurred: 'bool' object has no attribute 'strip'
+ERROR:root:An error occurred: 'bool' object has no attribute 'strip'
+ERROR:root:An error occurred: 'bool' object has no attribute 'strip'
+ERROR:root:An error occurred: 'bool' object has no attribute 'strip'
+ERROR:root:An error occurred: 'bool' object has no attribute 'strip'
+ERROR:root:Error setting serial port: could not open port 'COM1': FileNotFoundError(2, 'Не удается найти указанный файл.', None, 2)
+ERROR:root:Error setting serial port: could not open port 'COM2': FileNotFoundError(2, 'Не удается найти указанный файл.', None, 2)
+ERROR:root:Error setting serial port: could not open port 'COM1': PermissionError(13, 'Отказано в доступе.', None, 5)
+ERROR:root:Error setting serial port: could not open port 'COM1': PermissionError(13, 'Отказано в доступе.', None, 5)
+ERROR:root:Error setting serial port: could not open port 'COM1': PermissionError(13, 'Отказано в доступе.', None, 5)
+ERROR:root:Error setting serial port: could not open port 'COM1': PermissionError(13, 'Отказано в доступе.', None, 5)
+ERROR:root:An error occurred: 'str' object has no attribute 'decode'
+ERROR:root:Error setting serial port: could not open port 'COM1': PermissionError(13, 'Отказано в доступе.', None, 5)
+ERROR:root:An error occurred: 'str' object has no attribute 'decode'
+ERROR:root:Error setting serial port: could not open port 'COM1': PermissionError(13, 'Отказано в доступе.', None, 5)
+ERROR:root:An error occurred: invalid literal for int() with base 10: '(64.807,'
+ERROR:root:Error setting serial port: could not open port 'COM1': PermissionError(13, 'Отказано в доступе.', None, 5)
+ERROR:root:Error setting serial port: could not open port 'COM1': PermissionError(13, 'Отказано в доступе.', None, 5)
+ERROR:root:Error setting serial port: could not open port 'COM1': PermissionError(13, 'Отказано в доступе.', None, 5)
+ERROR:root:Error setting serial port: could not open port 'COM1': PermissionError(13, 'Отказано в доступе.', None, 5)
+ERROR:root:Error setting serial port: could not open port 'COM1': PermissionError(13, 'Отказано в доступе.', None, 5)
+ERROR:root:Error setting serial port: could not open port 'COM1': PermissionError(13, 'Отказано в доступе.', None, 5)
+ERROR:root:Error setting serial port: could not open port 'COM1': PermissionError(13, 'Отказано в доступе.', None, 5)
+ERROR:root:Error setting serial port: could not open port 'COM1': PermissionError(13, 'Отказано в доступе.', None, 5)
+ERROR:root:Error setting serial port: could not open port 'COM1': PermissionError(13, 'Отказано в доступе.', None, 5)
+ERROR:root:Error setting serial port: could not open port 'COM1': PermissionError(13, 'Отказано в доступе.', None, 5)
+ERROR:root:Error setting serial port: could not open port 'COM1': PermissionError(13, 'Отказано в доступе.', None, 5)
+ERROR:root:Error setting serial port: could not open port 'COM1': PermissionError(13, 'Отказано в доступе.', None, 5)
+ERROR:root:Error setting serial port: could not open port 'COM1': PermissionError(13, 'Отказано в доступе.', None, 5)
+ERROR:root:Error setting serial port: could not open port 'COM1': PermissionError(13, 'Отказано в доступе.', None, 5)
+ERROR:root:Error reading from serial port: GetOverlappedResult failed (PermissionError(13, 'Отказано в доступе.', None, 5))
+ERROR:root:An error occurred: 'SerialException' object has no attribute 'strip'
+ERROR:root:Error reading from serial port: GetOverlappedResult failed (PermissionError(13, 'Отказано в доступе.', None, 5))
+ERROR:root:An error occurred: 'SerialException' object has no attribute 'strip'
+ERROR:root:Error reading from serial port: GetOverlappedResult failed (PermissionError(13, 'Отказано в доступе.', None, 5))
+ERROR:root:An error occurred: 'SerialException' object has no attribute 'strip'
+ERROR:root:Error reading from serial port: GetOverlappedResult failed (PermissionError(13, 'Отказано в доступе.', None, 5))
+ERROR:root:An error occurred: 'SerialException' object has no attribute 'strip'
+ERROR:root:Error reading from serial port: GetOverlappedResult failed (PermissionError(13, 'Отказано в доступе.', None, 5))
+ERROR:root:An error occurred: 'SerialException' object has no attribute 'strip'
+ERROR:root:Error reading from serial port: GetOverlappedResult failed (PermissionError(13, 'Отказано в доступе.', None, 5))
+ERROR:root:An error occurred: 'SerialException' object has no attribute 'strip'
+ERROR:root:Error reading from serial port: GetOverlappedResult failed (PermissionError(13, 'Отказано в доступе.', None, 5))
+ERROR:root:Error reading from serial port: GetOverlappedResult failed (PermissionError(13, 'Отказано в доступе.', None, 5))
+ERROR:root:Error reading from serial port: GetOverlappedResult failed (PermissionError(13, 'Отказано в доступе.', None, 5))
+ERROR:root:Error reading from serial port: GetOverlappedResult failed (PermissionError(13, 'Отказано в доступе.', None, 5))
+ERROR:root:Error reading from serial port: GetOverlappedResult failed (PermissionError(13, 'Отказано в доступе.', None, 5))
+ERROR:root:Error reading from serial port: GetOverlappedResult failed (PermissionError(13, 'Отказано в доступе.', None, 5))
+ERROR:root:An error occurred: 'SerialException' object has no attribute 'strip'
+ERROR:root:An error occurred: 'bool' object has no attribute 'strip'
+ERROR:root:Error reading from serial port: GetOverlappedResult failed (PermissionError(13, 'Отказано в доступе.', None, 5))
+ERROR:root:An error occurred: 'SerialException' object has no attribute 'strip'
+ERROR:root:An error occurred: 'bool' object has no attribute 'strip'
+ERROR:root:An error occurred: 'bool' object has no attribute 'strip'
+ERROR:root:An error occurred: 'bool' object has no attribute 'strip'
+ERROR:root:An error occurred: 'bool' object has no attribute 'strip'
+ERROR:root:An error occurred: 'bool' object has no attribute 'strip'
+ERROR:root:An error occurred: 'bool' object has no attribute 'strip'
+ERROR:root:An error occurred: 'bool' object has no attribute 'strip'
+ERROR:root:An error occurred: 'bool' object has no attribute 'strip'
+ERROR:root:An error occurred: 'bool' object has no attribute 'strip'
+ERROR:root:Error reading from serial port: ClearCommError failed (PermissionError(13, 'Отказано в доступе.', None, 5))
+ERROR:root:Error reading from serial port: GetOverlappedResult failed (PermissionError(13, 'Отказано в доступе.', None, 5))
+ERROR:root:Error reading from serial port: GetOverlappedResult failed (PermissionError(13, 'Отказано в доступе.', None, 5))
+ERROR:root:An error occurred: 'SerialException' object has no attribute 'strip'
+ERROR:root:Error reading from serial port: ClearCommError failed (PermissionError(13, 'Отказано в доступе.', None, 5))
+ERROR:root:Error reading from serial port: GetOverlappedResult failed (PermissionError(13, 'Отказано в доступе.', None, 5))
+ERROR:root:Error reading from serial port: GetOverlappedResult failed (PermissionError(13, 'Отказано в доступе.', None, 5))
+ERROR:root:Error reading from serial port: GetOverlappedResult failed (PermissionError(13, 'Отказано в доступе.', None, 5))
+ERROR:root:Error reading from serial port: GetOverlappedResult failed (PermissionError(13, 'Отказано в доступе.', None, 5))
+ERROR:root:Error reading from serial port: GetOverlappedResult failed (PermissionError(13, 'Отказано в доступе.', None, 5))
+ERROR:root:Error reading from serial port: GetOverlappedResult failed (PermissionError(13, 'Отказано в доступе.', None, 5))
+ERROR:root:Error reading from serial port: GetOverlappedResult failed (PermissionError(13, 'Отказано в доступе.', None, 5))
+ERROR:root:Error reading from serial port: GetOverlappedResult failed (PermissionError(13, 'Отказано в доступе.', None, 5))
+ERROR:root:Error reading from serial port: GetOverlappedResult failed (PermissionError(13, 'Отказано в доступе.', None, 5))
+ERROR:root:Error reading from serial port: GetOverlappedResult failed (PermissionError(13, 'Отказано в доступе.', None, 5))
+ERROR:root:Error reading from serial port: GetOverlappedResult failed (PermissionError(13, 'Отказано в доступе.', None, 5))
+ERROR:root:Error reading from serial port: GetOverlappedResult failed (PermissionError(13, 'Отказано в доступе.', None, 5))
+ERROR:root:Error reading from serial port: GetOverlappedResult failed (PermissionError(13, 'Отказано в доступе.', None, 5))
+ERROR:root:An error occurred: 'SerialException' object has no attribute 'strip'
+ERROR:root:Error reading from serial port: ClearCommError failed (PermissionError(13, 'Отказано в доступе.', None, 5))
+ERROR:root:An error occurred: 'SerialException' object has no attribute 'strip'
+ERROR:root:Error reading from serial port: ClearCommError failed (PermissionError(13, 'Отказано в доступе.', None, 5))
+ERROR:root:An error occurred: 'SerialException' object has no attribute 'strip'
+ERROR:root:Error reading from serial port: ClearCommError failed (PermissionError(13, 'Отказано в доступе.', None, 5))
+ERROR:root:An error occurred: 'SerialException' object has no attribute 'strip'
+ERROR:root:Error reading from serial port: ClearCommError failed (PermissionError(13, 'Отказано в доступе.', None, 5))
+ERROR:root:An error occurred: 'SerialException' object has no attribute 'strip'
+ERROR:root:Error reading from serial port: ClearCommError failed (PermissionError(13, 'Отказано в доступе.', None, 5))
+ERROR:root:An error occurred: 'SerialException' object has no attribute 'strip'
+ERROR:root:Error reading from serial port: ClearCommError failed (PermissionError(13, 'Отказано в доступе.', None, 5))
+ERROR:root:An error occurred: 'SerialException' object has no attribute 'strip'
+ERROR:root:Error reading from serial port: ClearCommError failed (PermissionError(13, 'Отказано в доступе.', None, 5))
+ERROR:root:An error occurred: 'SerialException' object has no attribute 'strip'
+ERROR:root:Error reading from serial port: ClearCommError failed (PermissionError(13, 'Отказано в доступе.', None, 5))
+ERROR:root:An error occurred: 'SerialException' object has no attribute 'strip'
+ERROR:root:Error reading from serial port: ClearCommError failed (PermissionError(13, 'Отказано в доступе.', None, 5))
+ERROR:root:An error occurred: 'SerialException' object has no attribute 'strip'
+ERROR:root:Error reading from serial port: ClearCommError failed (PermissionError(13, 'Отказано в доступе.', None, 5))
+ERROR:root:An error occurred: 'SerialException' object has no attribute 'strip'
+ERROR:root:Error reading from serial port: ClearCommError failed (PermissionError(13, 'Отказано в доступе.', None, 5))
